@@ -27,5 +27,8 @@ web前端实习生阶段二考核项目的代码仓库：[https://pt-gitlab.shiy
 阶段二需求简介：[阶段二需求简介](https://doc.weixin.qq.com/doc/w3_ACQADAakADIPqt4HGc8T0iqcA3LkM?scode=AOwAYgeoAAkZOcECA1ACQADAakADI)  
 阶段二需求美术资源素材，共享盘地址:  \\192.168.1.253\Pingtai\web前端实习生\阶段二素材   
 阶段二需求页面效果视频示例：共享盘地址:  \\192.168.1.253\Pingtai\web前端实习生\阶段二素材   
+接口文档地址：[接口文档地址](http://developer.shiyuegame.com/showdoc/web/#/126?page_id=1970)  
 编码规范风格：[编码规范风格](https://doc.weixin.qq.com/doc/w3_ACQADAakADIBCSGW0yoTvuoKB22Ab?scode=AOwAYgeoAAkgsMCTGjACQADAakADI)  
+
+其它文档：[web前端实习生培养计划-验收评分](https://doc.weixin.qq.com/sheet/e3_ACQADAakADIgTU3fSOxTy0itoO0sq?scode=AOwAYgeoAAk1h9v1BW&version=3.1.12.6005&platform=win&tab=uy0p3x)
 
