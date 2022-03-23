@@ -17,4 +17,15 @@ video_start1.addEventListener(
 
 
 
+// 活动规则
+$(".rules-click").click(function(){
+    $('.wrap-rules').fadeIn(300)
+});
+$(".rules-close").click(function(){
+    $('.wrap-rules').fadeOut(300)
+});
+
+
+
+
 })
