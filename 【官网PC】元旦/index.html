@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <script>
+      var userAgent = navigator.userAgent;
+      // 判断是否为小于IE11的浏览器
+      var isLessIE11 =
+        userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1;
+      if (isLessIE11) {
+        var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+        reIE.test(userAgent);
+        var fIEVersion = parseFloat(RegExp["$1"]);
+        if (fIEVersion < 10) {
+          window.location.href = "https://sszg.shiyue.com/browser_notice.html";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- 视频全屏 -->
+      <div class="video-bg">
+        <video
+          autoplay
+          muted
+          class="video_start1"
+          id="video_start1"
+          poster="/assets/images/bg.jpg"
+        >
+          <source
+            src="https://pingtai-img.shiyue.com/game-activity/sszg/2021/order/assets/video_start1.mp4"
+            type="video/mp4"
+          />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+        <video
+          autoplay
+          loop
+          muted
+          class="video_start2 hide"
+          id="video_start2"
+          poster="/assets/images/bg.jpg"
+        >
+          <source
+            src="https://pingtai-img.shiyue.com/game-activity/sszg/2021/order/assets/video_start2.mp4"
+            type="video/mp4"
+          />
+          <p>Your browser does not support the video tag.</p>
+        </video>
+      </div>
+      >
+    </div>
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/jquery.toast.js"></script>
+    <script src="./assets/js/sha1.min.js"></script>
+    <script src="./assets/js/sign.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/api.js"></script>
+  </body>
+</html>
