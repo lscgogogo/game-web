@@ -124,3 +124,105 @@ body {
     opacity: 0;
     cursor: pointer;
 }
+
+/* 顶部分享栏 */
+.share-click{
+  width: 54px;
+	height: 51px;
+  position: absolute;
+  top: 75px;
+  right: 263px;
+  cursor: pointer;
+}
+
+.btn-web{
+  width: 117px;
+	height: 27px;
+  position: absolute;
+  top: 83px;
+  right: 95px;
+}
+
+.share-wrap{
+  width: 98px;
+	height: 318px;
+  position: absolute;
+  top: 126px;
+  right: 241px;
+}
+
+.community{
+  position: absolute;
+  top: 40px;
+  left: 4px;
+  cursor: pointer;
+}
+.wechat{
+  position: absolute;
+  top: 95px;
+  left: 6px;
+  cursor: pointer;
+}
+.TapTap{
+  position: absolute;
+  top: 150px;
+  left: 6px;
+  cursor: pointer;
+}
+.wb{
+  position: absolute;
+  top: 205px;
+  left: 6px;
+  cursor: pointer;
+}
+.dy{
+  position: absolute;
+  top: 260px;
+  left: 6px;
+  cursor: pointer;
+}
+.line1{
+  position: absolute;
+  top: 85px;
+  left: 30px;
+}
+.line2{
+  position: absolute;
+  top: 140px;
+  left: 30px;
+}
+.line3{
+  position: absolute;
+  top: 192px;
+  left: 30px;
+}
+.line4{
+  position: absolute;
+  top: 250px;
+  left: 30px;
+}
+.community-code{
+  position: absolute;
+  top: 11px;
+  display: none;
+}
+.wechat-code{
+  position: absolute;
+  top: 56px;
+  display: none;
+}
+.taptap-code{
+  position: absolute;
+  top: 110px;
+  display: none;
+}
+.wb-code{
+  position: absolute;
+  top: 165px;
+  display: none;
+}
+.dy-code{
+  position: absolute;
+  top: 220px;
+  display: none;
+}
