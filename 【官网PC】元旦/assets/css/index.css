@@ -90,147 +90,146 @@ body {
 }
 
 /* 左边下载栏 */
-.download-wrap{
-    width: 174px;
-    height: 368px;
-    position: absolute;
-    left: 0;
-    top: 324px;
-    
+.download-wrap {
+  width: 174px;
+  height: 368px;
+  position: absolute;
+  left: 0;
+  top: 324px;
 }
 
 /* 下载top样式？ */
-.down-az{
-    width: 138px;
-	height: 42px;
-    position: absolute;
-    left: 9px;
-    top: 60px;
+.down-az {
+  width: 138px;
+  height: 42px;
+  position: absolute;
+  left: 9px;
+  top: 60px;
 }
 
-.down-ios{
-    width: 138px;
-	height: 42px;
-    position: absolute;
-    left: 9px;
-    top: 127px;
+.down-ios {
+  width: 138px;
+  height: 42px;
+  position: absolute;
+  left: 9px;
+  top: 127px;
 }
-.down-open{
-    width: 38px;
-	height: 107px;
-    position: absolute;
-    left: 174px;
-    top: 67px;
-    opacity: 0;
-    cursor: pointer;
+.down-open {
+  width: 38px;
+  height: 107px;
+  position: absolute;
+  left: 174px;
+  top: 67px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* 顶部分享栏 */
-.share-click{
+.share-click {
   width: 54px;
-	height: 51px;
+  height: 51px;
   position: absolute;
   top: 75px;
   right: 263px;
   cursor: pointer;
 }
 
-.btn-web{
+.btn-web {
   width: 117px;
-	height: 27px;
+  height: 27px;
   position: absolute;
   top: 83px;
   right: 95px;
 }
 
-.share-wrap{
+.share-wrap {
   width: 98px;
-	height: 318px;
+  height: 318px;
   position: absolute;
   top: 126px;
   right: 241px;
 }
 
-.community{
+.community {
   position: absolute;
   top: 40px;
   left: 4px;
   cursor: pointer;
 }
-.wechat{
+.wechat {
   position: absolute;
   top: 95px;
   left: 6px;
   cursor: pointer;
 }
-.TapTap{
+.TapTap {
   position: absolute;
   top: 150px;
   left: 6px;
   cursor: pointer;
 }
-.wb{
+.wb {
   position: absolute;
   top: 205px;
   left: 6px;
   cursor: pointer;
 }
-.dy{
+.dy {
   position: absolute;
   top: 260px;
   left: 6px;
   cursor: pointer;
 }
-.line1{
+.line1 {
   position: absolute;
   top: 85px;
   left: 30px;
 }
-.line2{
+.line2 {
   position: absolute;
   top: 140px;
   left: 30px;
 }
-.line3{
+.line3 {
   position: absolute;
   top: 192px;
   left: 30px;
 }
-.line4{
+.line4 {
   position: absolute;
   top: 250px;
   left: 30px;
 }
-.community-code{
+.community-code {
   position: absolute;
   top: 11px;
   display: none;
 }
-.wechat-code{
+.wechat-code {
   position: absolute;
   top: 56px;
   display: none;
 }
-.taptap-code{
+.taptap-code {
   position: absolute;
   top: 110px;
   display: none;
 }
-.wb-code{
+.wb-code {
   position: absolute;
   top: 165px;
   display: none;
 }
-.dy-code{
+.dy-code {
   position: absolute;
   top: 220px;
   display: none;
 }
 
 /* 适龄提示弹窗 */
-.age-tips{
+.age-tips {
   width: 75px;
-	height: 96px;
+  height: 96px;
   position: absolute;
   left: 22px;
   top: 818px;
@@ -238,7 +237,7 @@ body {
 }
 .wrap-age-tips {
   width: 603px;
-	height: 396px;
+  height: 396px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -278,9 +277,9 @@ body {
 }
 
 /* 底部版权信息 */
-.copyright-click{
+.copyright-click {
   width: 142px;
-	height: 18px;
+  height: 18px;
   position: absolute;
   right: 40px;
   top: 900px;
@@ -324,7 +323,7 @@ body {
 .footer-wrap p:nth-child(6) {
   margin-left: 300px;
 }
-.footer-wrap p:nth-child(5){
+.footer-wrap p:nth-child(5) {
   margin-left: 300px;
 }
 .footer-wrap div p a {
@@ -337,3 +336,87 @@ body {
   font-size: 13px;
   color: #ffffff;
 }
+
+/* 预约功能 */
+.order-btn {
+  width: 254px;
+  height: 73px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -127px;
+  margin-top: 190px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.order-btn:hover {
+  transform: scale(1.1);
+}
+.wrap-order {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-close {
+  position: absolute;
+  top: -11px;
+  right: -25px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.login-close:hover {
+  transform: scale(1.2);
+}
+.iphone {
+  width: 297px;
+  height: 43px;
+  position: absolute;
+  left: 82px;
+  top: 190px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #5aa3a6;
+  border: solid 1px #a2f8fb;
+  color: white;
+}
+.verification-code {
+  width: 165px;
+  height: 42px;
+  position: absolute;
+  left: 82px;
+  top: 278px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #5aa3a6;
+  border: solid 1px #a2f8fb;
+  color: white;
+}
+.get-code {
+  width: 123px;
+  height: 42px;
+  position: absolute;
+  left: 255px;
+  top: 278px;
+  background-color: #2a6469;
+  border: solid 1px #6089a3;
+  color: white;
+}
+/* .iphone::-webkit-input-placeholder,
+.iphone::-moz-input-placeholder,
+.iphone::-ms-input-placeholder {
+  color: red;
+} */
+
+.login-btn{
+  width: 202px;
+	height: 74px;
+  position: absolute;
+  left: 50%;
+  top: 340px;
+  transform: translate(-50%,0);
+  cursor: pointer;
+}
+

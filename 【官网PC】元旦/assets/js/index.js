@@ -2,7 +2,7 @@ $(document).ready(function () {
   // 背景视频
   $("#video_start1")[0].play();
   setTimeout(function () {
-    handlePageReady();
+    // handlePageReady();
   }, 500);
   var video_start1 = document.getElementById("video_start1");
   video_start1.addEventListener(
@@ -102,6 +102,48 @@ $(document).ready(function () {
   });
 
 
-  
+  // 底部版权信息
+  var flag2 = 2
+  $(".copyright-click").click(function(){
+    if (flag2 % 2 == 0) {
+      $(".copyright-click").attr("src","./assets/images/footer/footer-open.png");
+      $(".footer-wrap").animate({ bottom: "0px" }, 500);
+
+    }
+    if (flag2 % 2 == 1) {
+      $(".copyright-click").attr("src","./assets/images/footer/footer-copyright.png");
+      $(".footer-wrap").animate({ bottom: "-138px" }, 500);
+
+    }
+    flag2++;
+  })
 
 });
+
+
+// 预约功能
+$('.order-btn').click(function(){
+  $('.wrap-order').fadeIn(300)
+})
+$('.login-close').click(function(){
+  $('.wrap-order').fadeOut(300)
+})
+
+// 验证码倒计时
+var counts = 60;
+function settime(val) {
+  
+  if (counts == 0) {
+    val.removeAttribute("disabled");
+    val.value = "获取验证码";
+    counts = 60;
+    return false;
+  } else {
+    val.setAttribute("disabled", true);
+    val.value = "已发送（" + counts + ")";
+    counts--;
+  };
+  setTimeout(function () {
+    settime(val);
+  }, 1000);
+}
