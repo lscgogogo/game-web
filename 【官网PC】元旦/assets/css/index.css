@@ -48,45 +48,79 @@ body {
   top: 195px;
   cursor: pointer;
 }
-.wrap-rules{
-    width: 603px;
-	height: 396px;
+.wrap-rules {
+  width: 603px;
+  height: 396px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #236468;
+  border: solid 3px #274445;
+}
+.wrap-rules p:nth-child(1) {
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+}
+.wrap-rules p:nth-child(2) {
+  position: absolute;
+  top: 90px;
+  left: 28px;
+  color: white;
+  line-height: 40px;
+  font-size: 14px;
+}
+.rules-close {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 603px;
+  top: -60px;
+  transform: scale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.rules-close:hover {
+  transform: scale(1.2);
+}
+
+/* 左边下载栏 */
+.download-wrap{
+    width: 174px;
+    height: 368px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-
-    background-color: #236468;
-    border: solid 3px #274445;
-
+    left: 0;
+    top: 324px;
     
 }
-.wrap-rules p:nth-child(1){
+
+/* 下载top样式？ */
+.down-az{
+    width: 138px;
+	height: 42px;
     position: absolute;
-    top: 30px;
-    left: 28px;
-    color: white;
-    line-height: 50px;
-    font-size: 24px;
+    left: 9px;
+    top: 60px;
 }
-.wrap-rules p:nth-child(2){
+
+.down-ios{
+    width: 138px;
+	height: 42px;
     position: absolute;
-    top: 90px;
-    left: 28px;
-    color: white;
-    line-height: 40px;
-    font-size: 14px;
+    left: 9px;
+    top: 127px;
 }
-.rules-close{
-    width: 61px;
-	height: 61px;
+.down-open{
+    width: 38px;
+	height: 107px;
     position: absolute;
-    left: 603px;
-    top: -60px;
-    transform: scale(1);
-    transition: 0.5s;
+    left: 174px;
+    top: 67px;
+    opacity: 0;
     cursor: pointer;
-}
-.rules-close:hover{
-    transform: scale(1.2);
 }
