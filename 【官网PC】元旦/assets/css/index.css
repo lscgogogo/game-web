@@ -226,3 +226,53 @@ body {
   top: 220px;
   display: none;
 }
+
+/* 适龄提示弹窗 */
+.age-tips{
+  width: 75px;
+	height: 96px;
+  position: absolute;
+  left: 22px;
+  top: 818px;
+  cursor: pointer;
+}
+.wrap-age-tips {
+  width: 603px;
+	height: 396px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #236468;
+  border: solid 3px #274445;
+}
+.wrap-age-tips p:nth-child(1) {
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+}
+.wrap-age-tips p:nth-child(2) {
+  position: absolute;
+  top: 90px;
+  left: 28px;
+  color: white;
+  line-height: 28px;
+  font-size: 14px;
+}
+.age-tips-close {
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 603px;
+  top: -60px;
+  transform: scale(1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.age-tips-close:hover {
+  transform: scale(1.2);
+}

@@ -9,17 +9,17 @@ $(document).ready(function () {
     "ended",
     function () {
       $("#video_start1").fadeOut();
-      $("#video_start2").fadeIn(0);
+      $("#video_start2").fadeIn();
     },
     false
   );
 
   // 活动规则
   $(".rules-click").click(function () {
-    $(".wrap-rules").fadeIn(300);
+    $(".wrap-rules").fadeIn(400);
   });
   $(".rules-close").click(function () {
-    $(".wrap-rules").fadeOut(300);
+    $(".wrap-rules").fadeOut(400);
   });
 
   // 左边下载栏
@@ -93,6 +93,15 @@ $(document).ready(function () {
     $(".dy").attr("src","./assets/images/share/icon/dy.png")
   });
 
+  // 适龄弹框
+  $(".age-tips").click(function () {
+    $(".wrap-age-tips").fadeIn(400);
+  });
+  $(".age-tips-close").click(function () {
+    $(".wrap-age-tips").fadeOut(400);
+  });
 
+
+  
 
 });
