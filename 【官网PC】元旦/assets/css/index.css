@@ -276,3 +276,64 @@ body {
 .age-tips-close:hover {
   transform: scale(1.2);
 }
+
+/* 底部版权信息 */
+.copyright-click{
+  width: 142px;
+	height: 18px;
+  position: absolute;
+  right: 40px;
+  top: 900px;
+  z-index: 99;
+  cursor: pointer;
+}
+.footer-copyrigh-wrap {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+.footer-wrap {
+  position: absolute;
+  bottom: -138px;
+  left: 0;
+  width: 100%;
+  height: 138px;
+  background-color: #1d393a;
+  z-index: 10;
+}
+.footer-wrap .sy-info {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 13px;
+  color: #ffffff;
+}
+.footer-wrap .sy-info img {
+  width: 180px;
+  float: left;
+  margin: 35px 60px;
+}
+.footer-wrap p {
+  padding: 2px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #403a34;
+}
+.footer-wrap p:nth-child(6) {
+  margin-left: 300px;
+}
+.footer-wrap p:nth-child(5){
+  margin-left: 300px;
+}
+.footer-wrap div p a {
+  font-size: 13px;
+  color: #888;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #403a34;
+}
+.footer-wrap div p:nth-of-type(2) a {
+  font-size: 13px;
+  color: #ffffff;
+}
