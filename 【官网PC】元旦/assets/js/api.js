@@ -81,3 +81,36 @@ $(document).ready(function () {
     );
   });
 });
+
+var reserveNumber = 0;
+// 预约人数参数
+var params3 = {
+  project:'11',
+  ts: Math.round(new Date() / 1000)
+};
+// 获取预约人数接口
+$(document).ready(function () {
+    params3.sign = sign(params3, secret_common);
+    console.log(params3);
+    $.post(
+      "http://test-activity.shiyue.com/reservation/info",
+      params3,
+      (data)=>{
+        console.log(data);
+        // 保存预约人数
+        reserveNumber = data.data.reserve_num;
+        console.log(reserveNumber);
+        if (data.code === 0) {
+          $('.order-number').text(reserveNumber);
+          console.log("成功");
+        } else if (data.code === 1000) {
+          bounced("参数错误");
+        } else if (data.code === 1002) {
+          bounced("签名错误");
+        } else if (data.code === 3006) {
+          bounced("获取预约信息失败");
+        } 
+      }
+    );
+});
+
