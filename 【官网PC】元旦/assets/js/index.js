@@ -26,16 +26,16 @@ function handlePageReady() {
 
 $(document).ready(function () {
   // 背景视频
-  $("#video_start1")[0].play();
+  $("#video-start1")[0].play();
   setTimeout(function () {
     handlePageReady();
   }, 4000);
-  var video_start1 = document.getElementById("video_start1");
+  var video_start1 = document.getElementById("video-start1");
   video_start1.addEventListener(
     "ended",
     function () {
-      $("#video_start1").fadeOut();
-      $("#video_start2").fadeIn();
+      $("#video-start1").fadeOut();
+      $("#video-start2").fadeIn();
     },
     false
   );

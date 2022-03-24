@@ -157,12 +157,13 @@ body {
 
 /* 顶部分享栏 */
 .share-click {
-  width: 54px;
+  width: 55px;
   height: 51px;
   position: absolute;
   top: 75px;
   right: 263px;
   cursor: pointer;
+
   -webkit-animation: fadeTop 1s;
   -moz-animation: fadeTop 1s;
   -o-animation: fadeTop 1s;
@@ -172,7 +173,7 @@ body {
 
 .btn-web {
   width: 117px;
-  height: 27px;
+  height: 34px;
   position: absolute;
   top: 83px;
   right: 95px;
@@ -512,6 +513,8 @@ body {
   transform: scale(1.1);
 }
 .wrap-order {
+  width: 470px;
+  height: 447px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -552,31 +555,33 @@ body {
   height: 43px;
   position: absolute;
   left: 82px;
-  top: 190px;
+  top: 180px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #5aa3a6;
   border: solid 1px #a2f8fb;
   color: white;
+  text-indent: 13px;
 }
 .verification-code {
   width: 165px;
   height: 42px;
   position: absolute;
   left: 82px;
-  top: 278px;
+  top: 248px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #5aa3a6;
   border: solid 1px #a2f8fb;
   color: white;
+  text-indent: 13px;
 }
 .get-code {
   width: 123px;
   height: 42px;
   position: absolute;
   left: 255px;
-  top: 278px;
+  top: 248px;
   background-color: #2a6469;
   border: solid 1px #6089a3;
   color: white;
@@ -599,11 +604,11 @@ input:-ms-input-placeholder {
   color: #eff9f7;
 }
 .login-btn {
-  width: 202px;
+  width: 203px;
   height: 74px;
   position: absolute;
   left: 50%;
-  top: 340px;
+  top: 330px;
   transform: translate(-50%, 0);
   cursor: pointer;
 }
