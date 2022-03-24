@@ -19,6 +19,7 @@ body {
   left: 0;
   overflow: hidden;
   background: url(/assets/images/bg.jpg) center center no-repeat;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -613,7 +614,8 @@ input:-ms-input-placeholder {
   height: 263px;
   position: absolute;
   left: 50%;
-  margin-top: 654px;
+  top: 50%;
+  margin-top: 185px;
 
   -webkit-animation: fade 1s;
   -moz-animation: fade 1s;

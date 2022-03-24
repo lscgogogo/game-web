@@ -179,8 +179,6 @@ $(document).ready(function () {
       $(".wrap-order").fadeOut(300);
     });
 
- 
-
     // 预约里程碑
     if (reserveNumber >= 100000) {
       $(".unfinished-1w").attr(
