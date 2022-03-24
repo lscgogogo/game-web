@@ -179,23 +179,7 @@ $(document).ready(function () {
       $(".wrap-order").fadeOut(300);
     });
 
-    // 验证码倒计时
-    var counts = 60;
-    function settime(val) {
-      if (counts == 0) {
-        val.removeAttribute("disabled");
-        val.value = "获取验证码";
-        counts = 60;
-        return false;
-      } else {
-        val.setAttribute("disabled", true);
-        val.value = "已发送（" + counts + ")";
-        counts--;
-      }
-      setTimeout(function () {
-        settime(val);
-      }, 1000);
-    }
+ 
 
     // 预约里程碑
     if (reserveNumber >= 100000) {
@@ -271,3 +255,21 @@ $(document).ready(function () {
     });
   }, 6000);
 });
+
+   // 验证码倒计时
+   var counts = 60;
+   function settime(val) {
+     if (counts == 0) {
+       val.removeAttribute("disabled");
+       val.value = "获取验证码";
+       counts = 60;
+       return false;
+     } else {
+       val.setAttribute("disabled", true);
+       val.value = "已发送（" + counts + ")";
+       counts--;
+     }
+     setTimeout(function () {
+       settime(val);
+     }, 1000);
+   }

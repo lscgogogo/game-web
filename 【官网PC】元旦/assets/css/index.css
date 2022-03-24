@@ -19,6 +19,10 @@ body {
   left: 0;
   overflow: hidden;
   background: url(/assets/images/bg.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
 }
 .video-bg {
@@ -47,6 +51,10 @@ body {
   left: 0;
   top: 195px;
   cursor: pointer;
+  -webkit-animation: fadeLeft 1s;
+  -moz-animation: fadeLeft 1s;
+  -o-animation: fadeLeft 1s;
+  -ms-animation: fadeLeft 1s;
   animation: fadeLeft 1s;
 }
 
@@ -56,6 +64,10 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #236468;
   border: solid 3px #274445;
@@ -83,11 +95,23 @@ body {
   position: absolute;
   left: 603px;
   top: -60px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
 }
 .rules-close:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -98,11 +122,13 @@ body {
   position: absolute;
   left: 0;
   top: 324px;
+  -webkit-animation: fadeLeft 1s;
+  -moz-animation: fadeLeft 1s;
+  -o-animation: fadeLeft 1s;
+  -ms-animation: fadeLeft 1s;
   animation: fadeLeft 1s;
 }
 
-
-/* 下载top样式？ */
 .down-az {
   width: 138px;
   height: 42px;
@@ -136,6 +162,10 @@ body {
   top: 75px;
   right: 263px;
   cursor: pointer;
+  -webkit-animation: fadeTop 1s;
+  -moz-animation: fadeTop 1s;
+  -o-animation: fadeTop 1s;
+  -ms-animation: fadeTop 1s;
   animation: fadeTop 1s;
 }
 
@@ -145,6 +175,10 @@ body {
   position: absolute;
   top: 83px;
   right: 95px;
+  -webkit-animation: fadeTop 1s;
+  -moz-animation: fadeTop 1s;
+  -o-animation: fadeTop 1s;
+  -ms-animation: fadeTop 1s;
   animation: fadeTop 1s;
 }
 
@@ -155,7 +189,7 @@ body {
   top: 126px;
   right: 241px;
 }
-.community-wrap{
+.community-wrap {
   width: 88px;
   height: 60px;
   position: absolute;
@@ -171,7 +205,7 @@ body {
   cursor: pointer;
 }
 
-.wechat-wrap{
+.wechat-wrap {
   width: 88px;
   height: 45px;
   position: absolute;
@@ -186,7 +220,7 @@ body {
   left: 0px;
   cursor: pointer;
 }
-.TapTap-wrap{
+.TapTap-wrap {
   width: 88px;
   height: 45px;
   position: absolute;
@@ -201,7 +235,7 @@ body {
   left: 0px;
   cursor: pointer;
 }
-.wb-wrap{
+.wb-wrap {
   width: 88px;
   height: 45px;
   position: absolute;
@@ -216,7 +250,7 @@ body {
   left: 0px;
   cursor: pointer;
 }
-.dy-wrap{
+.dy-wrap {
   width: 88px;
   height: 45px;
   position: absolute;
@@ -301,6 +335,11 @@ body {
   left: 22px;
   top: 818px;
   cursor: pointer;
+
+  -webkit-animation: fadeBottom 1s;
+  -moz-animation: fadeBottom 1s;
+  -o-animation: fadeBottom 1s;
+  -ms-animation: fadeBottom 1s;
   animation: fadeBottom 1s;
 }
 .wrap-age-tips {
@@ -309,10 +348,15 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   background-color: #236468;
   border: solid 3px #274445;
   z-index: 999;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .wrap-age-tips p:nth-child(1) {
   position: absolute;
@@ -336,11 +380,30 @@ body {
   position: absolute;
   left: 603px;
   top: -60px;
-  transform: scale(1);
-  transition: 0.5s;
   cursor: pointer;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
 }
 .age-tips-close:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -353,6 +416,11 @@ body {
   top: 900px;
   z-index: 99;
   cursor: pointer;
+
+  -webkit-animation: fadeBottom 1s;
+  -moz-animation: fadeBottom 1s;
+  -o-animation: fadeBottom 1s;
+  -ms-animation: fadeBottom 1s;
   animation: fadeBottom 1s;
 }
 .footer-copyrigh-wrap {
@@ -416,17 +484,41 @@ body {
   margin-left: -127px;
   margin-top: 122px;
   cursor: pointer;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
+
+  -webkit-animation: fade 1s;
+  -moz-animation: fade 1s;
+  -o-animation: fade 1s;
+  -ms-animation: fade 1s;
   animation: fade 1s;
 }
 .order-btn:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .wrap-order {
   position: absolute;
   top: 50%;
   left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .login-close {
@@ -434,10 +526,24 @@ body {
   top: -11px;
   right: -25px;
   cursor: pointer;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
 }
 .login-close:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 .iphone {
@@ -507,10 +613,19 @@ input:-ms-input-placeholder {
   height: 263px;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 0);
   margin-top: 654px;
 
+  -webkit-animation: fade 1s;
+  -moz-animation: fade 1s;
+  -o-animation: fade 1s;
+  -ms-animation: fade 1s;
   animation: fade 1s;
+
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .achievement-people {
@@ -553,13 +668,27 @@ input:-ms-input-placeholder {
 .unfinished-6w,
 .unfinished-10w {
   cursor: pointer;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
   transition: 0.5s;
 }
 .unfinished-1w:hover,
 .unfinished-3w:hover,
 .unfinished-6w:hover,
 .unfinished-10w:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 .order-number {
@@ -608,35 +737,63 @@ input:-ms-input-placeholder {
     opacity: 1;
   }
 }
-@keyframes fadeLeft{
-  0%{
-    transform: translate(-100%,0);
+@keyframes fadeLeft {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+
     opacity: 0;
   }
-  100%{
-    transform: translate(0,0);
+  100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+
     opacity: 1;
   }
 }
 @keyframes fadeTop {
   0% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
     transform: translate(0, -100%);
+
     opacity: 0;
   }
   100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
+
     opacity: 1;
   }
-  
 }
 @keyframes fadeBottom {
   0% {
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
     transform: translate(0, 100%);
+
     opacity: 0;
   }
   100% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
+
     opacity: 1;
   }
-  
 }

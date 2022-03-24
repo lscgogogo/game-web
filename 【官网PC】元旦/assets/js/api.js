@@ -1,4 +1,4 @@
-// 弹框
+// 弹框封装
 function bounced(data) {
   var string = String(data);
   $("body").toast({
