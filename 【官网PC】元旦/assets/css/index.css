@@ -47,7 +47,9 @@ body {
   left: 0;
   top: 195px;
   cursor: pointer;
+  animation: fadeLeft 1s;
 }
+
 .wrap-rules {
   width: 603px;
   height: 396px;
@@ -55,9 +57,9 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   background-color: #236468;
   border: solid 3px #274445;
+  z-index: 999;
 }
 .wrap-rules p:nth-child(1) {
   position: absolute;
@@ -96,7 +98,9 @@ body {
   position: absolute;
   left: 0;
   top: 324px;
+  animation: fadeLeft 1s;
 }
+
 
 /* 下载top样式？ */
 .down-az {
@@ -132,6 +136,7 @@ body {
   top: 75px;
   right: 263px;
   cursor: pointer;
+  animation: fadeTop 1s;
 }
 
 .btn-web {
@@ -140,6 +145,7 @@ body {
   position: absolute;
   top: 83px;
   right: 95px;
+  animation: fadeTop 1s;
 }
 
 .share-wrap {
@@ -295,6 +301,7 @@ body {
   left: 22px;
   top: 818px;
   cursor: pointer;
+  animation: fadeBottom 1s;
 }
 .wrap-age-tips {
   width: 603px;
@@ -303,9 +310,9 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   background-color: #236468;
   border: solid 3px #274445;
+  z-index: 999;
 }
 .wrap-age-tips p:nth-child(1) {
   position: absolute;
@@ -346,6 +353,7 @@ body {
   top: 900px;
   z-index: 99;
   cursor: pointer;
+  animation: fadeBottom 1s;
 }
 .footer-copyrigh-wrap {
   cursor: pointer;
@@ -410,6 +418,7 @@ body {
   cursor: pointer;
   transform: scale(1);
   transition: 0.5s;
+  animation: fade 1s;
 }
 .order-btn:hover {
   transform: scale(1.1);
@@ -500,7 +509,10 @@ input:-ms-input-placeholder {
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 654px;
+
+  animation: fade 1s;
 }
+
 .achievement-people {
   width: 601px;
   height: 23px;
@@ -587,4 +599,44 @@ input:-ms-input-placeholder {
   position: absolute;
   left: 821px;
   top: -45px;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft{
+  0%{
+    transform: translate(-100%,0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+@keyframes fadeTop {
+  0% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+}
+@keyframes fadeBottom {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
 }
