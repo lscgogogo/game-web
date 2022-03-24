@@ -154,6 +154,30 @@ body {
   opacity: 0;
   cursor: pointer;
 }
+.side-line{
+  width: 134px;
+  height: 8px;
+  position: absolute;
+  top: 196px;
+  left: 9px;
+  -webkit-animation: scan linear 6s infinite;
+  -moz-animation: scan linear 6s infinite;
+  -o-animation: scan linear 6s infinite;
+  -ms-animation: scan linear 6s infinite;
+  animation: scan linear 6s infinite;
+
+}
+@keyframes scan {
+  0% {
+    top: 196px;
+  }
+  50% {
+    top: 330px;
+  }
+  100% {
+    top: 196px;
+  }
+}
 
 /* 顶部分享栏 */
 .share-click {
