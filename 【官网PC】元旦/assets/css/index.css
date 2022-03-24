@@ -149,35 +149,81 @@ body {
   top: 126px;
   right: 241px;
 }
-
-.community {
+.community-wrap{
+  width: 88px;
+  height: 60px;
   position: absolute;
-  top: 40px;
-  left: 4px;
+  top: 20px;
+  left: 8px;
+}
+.community {
+  width: 85px;
+  height: 36px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
   cursor: pointer;
+}
+
+.wechat-wrap{
+  width: 88px;
+  height: 45px;
+  position: absolute;
+  top: 92px;
+  left: 10px;
 }
 .wechat {
+  width: 85px;
+  height: 36px;
   position: absolute;
-  top: 95px;
-  left: 6px;
+  top: 5px;
+  left: 0px;
   cursor: pointer;
+}
+.TapTap-wrap{
+  width: 88px;
+  height: 45px;
+  position: absolute;
+  top: 145px;
+  left: 10px;
 }
 .TapTap {
+  width: 85px;
+  height: 36px;
   position: absolute;
-  top: 150px;
-  left: 6px;
+  top: 8px;
+  left: 0px;
   cursor: pointer;
+}
+.wb-wrap{
+  width: 88px;
+  height: 45px;
+  position: absolute;
+  top: 200px;
+  left: 10px;
 }
 .wb {
+  width: 85px;
+  height: 36px;
   position: absolute;
-  top: 205px;
-  left: 6px;
+  top: 8px;
+  left: 0px;
   cursor: pointer;
 }
-.dy {
+.dy-wrap{
+  width: 88px;
+  height: 45px;
   position: absolute;
   top: 260px;
-  left: 6px;
+  left: 10px;
+  /* background-color: yellow; */
+}
+.dy {
+  width: 85px;
+  height: 36px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   cursor: pointer;
 }
 .line1 {
@@ -201,27 +247,42 @@ body {
   left: 30px;
 }
 .community-code {
+  width: 106px;
+  height: 129px;
   position: absolute;
   top: 11px;
+  left: 96px;
   display: none;
 }
 .wechat-code {
+  width: 106px;
+  height: 129px;
   position: absolute;
+  left: 96px;
   top: 56px;
   display: none;
 }
 .taptap-code {
+  width: 106px;
+  height: 129px;
   position: absolute;
+  left: 96px;
   top: 110px;
   display: none;
 }
 .wb-code {
+  width: 106px;
+  height: 129px;
   position: absolute;
+  left: 96px;
   top: 165px;
   display: none;
 }
 .dy-code {
+  width: 106px;
+  height: 129px;
   position: absolute;
+  left: 96px;
   top: 220px;
   display: none;
 }

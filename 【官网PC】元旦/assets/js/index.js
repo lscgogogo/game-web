@@ -36,61 +36,83 @@ $(document).ready(function () {
     flag1++;
   });
 
-  // 顶部分享栏 ???二维码hover效果
+  // 顶部分享栏
   $(
     ".share-click,.share-wrap,.community-code,.wechat-code,.taptap-code,.wb-code,.dy-code"
   ).mouseenter(function () {
     $(".share-wrap").show();
+  });
+  $(".community-code").mouseenter(function () {
+    $(".share-wrap").show();
+    $(".community-code").show();
+  });
+  $(".wechat-code").mouseenter(function () {
+    $(".share-wrap").show();
+    $(".wechat-code").show();
+  });
+  $(".taptap-code").mouseenter(function () {
+    $(".share-wrap").show();
+    $(".taptap-code").show();
+  });
+  $(".wb-code").mouseenter(function () {
+    $(".share-wrap").show();
+    $(".wb-code").show();
+  });
+  $(".dy-code").mouseenter(function () {
+    $(".share-wrap").show();
+    $(".dy-code").show();
   });
 
   $(".share-click,.share-wrap").mouseleave(function () {
     $(".share-wrap").hide();
   });
 
-  $(".community").mouseenter(function () {
+  $(".community-wrap").mouseenter(function () {
     $(".community-code").show();
-    $(".community").attr("src","./assets/images/share/icon/community-hover.png")
+    $(".community").attr(
+      "src",
+      "./assets/images/share/icon/community-hover.png"
+    );
   });
-  $(".community").mouseleave(function () {
+  $(".community-wrap").mouseleave(function () {
     $(".community-code").hide();
-    $(".community").attr("src","./assets/images/share/icon/community.png")
+    $(".community").attr("src", "./assets/images/share/icon/community.png");
   });
 
-  $(".wechat").mouseenter(function () {
+  $(".wechat-wrap").mouseenter(function () {
     $(".wechat-code").show();
-    $(".wechat").attr("src","./assets/images/share/icon/wechat-hover.png")
+    $(".wechat").attr("src", "./assets/images/share/icon/wechat-hover.png");
   });
-  $(".wechat").mouseleave(function () {
+  $(".wechat-wrap").mouseleave(function () {
     $(".wechat-code").hide();
-    $(".wechat").attr("src","./assets/images/share/icon/wechat.png")
+    $(".wechat").attr("src", "./assets/images/share/icon/wechat.png");
   });
 
-  $(".TapTap").mouseenter(function () {
+  $(".TapTap-wrap").mouseenter(function () {
     $(".taptap-code").show();
-    $(".TapTap").attr("src","./assets/images/share/icon/TapTap-hover.png")
+    $(".TapTap").attr("src", "./assets/images/share/icon/TapTap-hover.png");
   });
-  $(".TapTap").mouseleave(function () {
+  $(".TapTap-wrap").mouseleave(function () {
     $(".taptap-code").hide();
-    $(".TapTap").attr("src","./assets/images/share/icon/TapTap.png")
+    $(".TapTap").attr("src", "./assets/images/share/icon/TapTap.png");
   });
 
-  $(".wb").mouseenter(function () {
+  $(".wb-wrap").mouseenter(function () {
     $(".wb-code").show();
-    $(".wb").attr("src","./assets/images/share/icon/wb-hover.png")
-    
+    $(".wb").attr("src", "./assets/images/share/icon/wb-hover.png");
   });
-  $(".wb").mouseleave(function () {
+  $(".wb-wrap").mouseleave(function () {
     $(".wb-code").hide();
-    $(".wb").attr("src","./assets/images/share/icon/wb.png")
+    $(".wb").attr("src", "./assets/images/share/icon/wb.png");
   });
 
-  $(".dy").mouseenter(function () {
+  $(".dy-wrap").mouseenter(function () {
     $(".dy-code").show();
-    $(".dy").attr("src","./assets/images/share/icon/dy-hover.png")
+    $(".dy").attr("src", "./assets/images/share/icon/dy-hover.png");
   });
-  $(".dy").mouseleave(function () {
+  $(".dy-wrap").mouseleave(function () {
     $(".dy-code").hide();
-    $(".dy").attr("src","./assets/images/share/icon/dy.png")
+    $(".dy").attr("src", "./assets/images/share/icon/dy.png");
   });
 
   // 适龄弹框
@@ -101,38 +123,38 @@ $(document).ready(function () {
     $(".wrap-age-tips").fadeOut(400);
   });
 
-
   // 底部版权信息
-  var flag2 = 2
-  $(".copyright-click").click(function(){
+  var flag2 = 2;
+  $(".copyright-click").click(function () {
     if (flag2 % 2 == 0) {
-      $(".copyright-click").attr("src","./assets/images/footer/footer-open.png");
+      $(".copyright-click").attr(
+        "src",
+        "./assets/images/footer/footer-open.png"
+      );
       $(".footer-wrap").animate({ bottom: "0px" }, 500);
-
     }
     if (flag2 % 2 == 1) {
-      $(".copyright-click").attr("src","./assets/images/footer/footer-copyright.png");
+      $(".copyright-click").attr(
+        "src",
+        "./assets/images/footer/footer-copyright.png"
+      );
       $(".footer-wrap").animate({ bottom: "-138px" }, 500);
-
     }
     flag2++;
-  })
-
+  });
 });
 
-
 // 预约功能
-$('.order-btn').click(function(){
-  $('.wrap-order').fadeIn(300)
-})
-$('.login-close').click(function(){
-  $('.wrap-order').fadeOut(300)
-})
+$(".order-btn").click(function () {
+  $(".wrap-order").fadeIn(300);
+});
+$(".login-close").click(function () {
+  $(".wrap-order").fadeOut(300);
+});
 
 // 验证码倒计时
 var counts = 60;
 function settime(val) {
-  
   if (counts == 0) {
     val.removeAttribute("disabled");
     val.value = "获取验证码";
@@ -142,8 +164,54 @@ function settime(val) {
     val.setAttribute("disabled", true);
     val.value = "已发送（" + counts + ")";
     counts--;
-  };
+  }
   setTimeout(function () {
     settime(val);
   }, 1000);
 }
+
+// 预约里程碑
+if (reserveNumber >= 100000) {
+  $(".unfinished-1w").attr("src", "./assets/images/achievement/1w-finish.png");
+  $(".unfinished-3w").attr("src", "./assets/images/achievement/3w-finish.png");
+  $(".unfinished-6w").attr("src", "./assets/images/achievement/6w-finish.png");
+  $(".unfinished-10w").attr(
+    "src",
+    "./assets/images/achievement/10w-finish.png"
+  );
+} else if (reserveNumber >= 60000) {
+  $(".unfinished-1w").attr("src", "./assets/images/achievement/1w-finish.png");
+  $(".unfinished-3w").attr("src", "./assets/images/achievement/3w-finish.png");
+  $(".unfinished-6w").attr("src", "./assets/images/achievement/6w-finish.png");
+} else if (reserveNumber >= 30000) {
+  $(".unfinished-1w").attr("src", "./assets/images/achievement/1w-finish.png");
+  $(".unfinished-3w").attr("src", "./assets/images/achievement/3w-finish.png");
+} else if (reserveNumber >= 10000) {
+  $(".unfinished-1w").attr("src", "./assets/images/achievement/1w-finish.png");
+}
+
+// 奖励hover效果
+$(".unfinished-1w").mouseenter(function () {
+  $(".reward-1w").fadeIn(300);
+});
+$(".unfinished-1w").mouseleave(function () {
+  $(".reward-1w").fadeOut(300);
+});
+$(".unfinished-3w").mouseenter(function () {
+  $(".reward-3w").fadeIn(300);
+});
+$(".unfinished-3w").mouseleave(function () {
+  $(".reward-3w").fadeOut(300);
+});
+$(".unfinished-6w").mouseenter(function () {
+  $(".reward-6w").fadeIn(300);
+});
+$(".unfinished-6w").mouseleave(function () {
+  $(".reward-6w").fadeOut(300);
+});
+$(".unfinished-10w").mouseenter(function () {
+  $(".reward-10w").fadeIn(300);
+});
+$(".unfinished-10w").mouseleave(function () {
+  $(".reward-10w").fadeOut(300);
+});
